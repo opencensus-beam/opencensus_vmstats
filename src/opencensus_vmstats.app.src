@@ -1,0 +1,18 @@
+{application, opencensus_vmstats,
+ [{description, "OpenCensus integration for vmstats library"},
+  {vsn, git},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib,
+    opencensus
+    % Explictly do not start vmstats
+   ]},
+  {env,[]},
+  {mod, {opencensus_vmstats, []}},
+  {modules, []},
+
+  {maintainers, ["Łukasz Niemier"]},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
